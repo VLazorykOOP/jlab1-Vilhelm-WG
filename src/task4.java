@@ -10,7 +10,6 @@ public class task4 {
         // Розбиваємо текст на слова (розділювачі: пробіли, розділові знаки)
         String[] words = text.split("[\\s.,!?;:()\"'-]+");
 
-        // Знаходимо максимальну довжину слова
         int maxLen = 0;
         for (String word : words) {
             if (word.length() > maxLen) {
@@ -18,16 +17,13 @@ public class task4 {
             }
         }
 
-        // Видаляємо слова з максимальною довжиною
         String result = text;
         for (String word : words) {
             if (word.length() == maxLen) {
-                // замінюємо слово на порожній рядок, зберігаючи розділові знаки
                 result = result.replaceAll("\\b" + word + "\\b", "");
             }
         }
 
-        // Прибираємо зайві пробіли
         result = result.replaceAll("\\s+", " ").trim();
 
         System.out.println("Текст після видалення найдовших слів:");
