@@ -11,13 +11,13 @@ public class task1 {
         double result1 = 1.0 / (x1 * y1) + (1.0 / (x1 * x1 + y1 * y1)) * (x1 - y1);
         System.out.println("Варіант 1 (double → double): " + result1);
 
-        // ВАРІАНТ 2: x, y як int → результат double
+        System.out.println("Enter x and y: ");
         int x2 = sc.nextInt();
         int y2 = sc.nextInt();
         double result2 = 1.0 / (x2 * y2) + (1.0 / (x2 * x2 + y2 * y2)) * (x2 - y2);
         System.out.println("Варіант 2 (int → double): " + result2);
 
-        // ВАРІАНТ 3: x, y як double → результат int
+        System.out.println("Enter x and y: ");
         double x3 = sc.nextDouble();
         double y3 = sc.nextDouble();
         double temp = 1.0 / (x3 * y3) + (1.0 / (x3 * x3 + y3 * y3)) * (x3 - y3);
